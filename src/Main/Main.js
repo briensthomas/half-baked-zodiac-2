@@ -1,6 +1,5 @@
 import React from 'react';
 import backgroundImg from '../background.png';
-import { zodiac } from '../data';
 import ZodiacCard from '../ZodiacCard/ZodiacCard';
 import './Main.css';
 
@@ -9,7 +8,7 @@ export default function Main({ zodiacs }) {
     <main style={{ backgroundImage: `url(${backgroundImg})` }}>
       {
         zodiacs.map((zodiac, i) => <ZodiacCard
-          {... zodiac}
+          {...zodiac}
           key={zodiac.name + i} />)
       };
     </main>);}
