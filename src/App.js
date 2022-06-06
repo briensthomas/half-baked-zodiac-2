@@ -1,5 +1,5 @@
 import './App.css';
-import zodiac from './data.js';
+import { zodiac } from './data.js';
 
 import Header from './Header/Header.js';
 import Main from './Main/Main.js';
